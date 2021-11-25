@@ -15,13 +15,13 @@ const ChatPage = () => {
     }
     return (
         <>
-            <Row style={{ height: "69vh"}}>
+            <Row style={{ height: "69vh",overflowY: "scroll" ,display: "flex" , flexDirection: "column-reverse"}}>
                 <Col sm={12} >
                     <p className="chat_message">Hey Guys</p>
                     { 
                         messages.map((x,i) => {
                             return(
-                            <p className="chat_message chat_reciever">{x}</p>
+                           x? <p className="chat_message chat_reciever">{x}</p> : null
                             )
                         })
                       
