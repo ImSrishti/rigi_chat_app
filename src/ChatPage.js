@@ -33,7 +33,7 @@ const ChatPage = () => {
             </Row>
             <Row >
                 <Col sm={12} >
-                    <InputGroup className="mb-3" style={{position:"fixed",width:"60%"}}>
+                    <InputGroup className="mb-3" style={{position:"fixed",maxWidth:"50%"}}>
                         <FormControl
                             value={input}
                             onChange={(e) => setinput([e.target.value])}
